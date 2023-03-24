@@ -24,7 +24,6 @@ export default function Sound() {
     fireplace,
     buttonPress,
     kitchenTimer,
-    buttonPress,
     playAudio,
     pauseAudio,
     }
