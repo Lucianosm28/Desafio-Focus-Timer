@@ -1,8 +1,6 @@
 export default function Controls({
     playButton,
     pauseButton,
-    themeLightButton,
-    themeDarkButton,
     body
   }) {
     function play() {
@@ -17,21 +15,9 @@ export default function Controls({
       button.classList.toggle('off')
       button.classList.toggle('on')
     }
-    function lightToDarkButton() {
-      themeLightButton.classList.add('hide')
-      themeDarkButton.classList.remove('hide')
-      body.classList.toggle('dark')
-    }
-    function darkToLightButton() {
-      themeLightButton.classList.remove('hide')
-      themeDarkButton.classList.add('hide')
-      body.classList.toggle('dark')
-    } 
     return {
       play,
       reset,
-      changeButtonBG,
-      lightToDarkButton,
-      darkToLightButton
+      changeButtonBG
     }
   }
