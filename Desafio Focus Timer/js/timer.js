@@ -47,7 +47,7 @@ export default function Timer({
       minutesDisplay.textContent = String(Number(minutesDisplay.textContent) + 5).padStart(2, '0')
       return
     }
-    minutesDisplay.textContent = '60'
+    minutesDisplay.textContent = '59'
     secondsDisplay.textContent = '00'
   }
   function decreaseMinutes() {
